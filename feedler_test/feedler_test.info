@@ -1,0 +1,4 @@
+name = Feedler test module
+description = Display articles in json format
+core = 7.x
+package = Test Modules

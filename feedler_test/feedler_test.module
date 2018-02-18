@@ -1,0 +1,13 @@
+<?php
+
+/* hook menu */
+
+function feedler_test_menu (){
+    $items['feed'] = array(
+      'title' => 'Feed in JSON format',
+      'page callback' => 'show_feed_json',
+      'file' => 'feedler_test.page.inc',
+      'access arguments' => array('access content'),
+    );
+    return $items;
+}
