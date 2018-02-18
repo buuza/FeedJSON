@@ -12,6 +12,7 @@ function show_feed_json() {
         ->fields('n', array('nid', 'type', 'title', 'created', 'changed', 'uid', 'status'))
         ->condition('status', 1)
         ->condition('type', $type)
+        ->orderBy('created', 'DESC')
         ->range(0, $limit)
         ->execute();
 
